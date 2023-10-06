@@ -26,64 +26,64 @@ header .wrapper {
     background-color: rgba(255, 255, 255, 0);
 }
 
-#section_1 {
-    padding: 20px;
+main {
+    width: 375px;
+    overflow: hidden;
 }
 
-#section_1 h1 {
+#section_1 {
+    padding: 20px 20px 67px;
+}
+
+#section_1 h1, #section_2 h1, #section_3 h1 {
     font-size: 40px;
     font-weight: 400;
     color: #142251;
-    line-height: 85%;
-    letter-spacing: -4%;
     margin-bottom: 20px;
+    line-height: 34px;
+    word-wrap: break-word 
 }
 #section_1 span {
     color: #AFB4C4;
 }
+#section_3 h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
 
-#section_1 h3 {
+#section_1 p, #section_2 .section_2_text p {
     font-size: 14px;
     font-weight: 400;
     color: #AFB4C4;
     letter-spacing: -3%;
 }
 
-#section_1 a {
+#section_1 p {
+    width: 170px;
+}
+
+#section_1 a, #section_2 a {
     text-decoration: none;
     color: #213887;
     font-weight: 500;
 }
 
-.photo_composition {
-    padding: 15px;
-    border-radius: 20px;
+#section_1_pic_composition {
+    margin-top: 20px;
+    position: relative;
 }
 
-.photo_composition .wrapper {
-    width: 100%;
-    overflow-y: scroll;
-    display: flex;
-    border-radius: 10px;
+#pic_section_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.photo_composition .card {
-    width: 150px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-right: 10px;
-    flex-shrink: 0;
+#bg_section_1 {
+    margin-top: -70px;
 }
 
-.photo_composition {
-    width: 100%;
-    height: auto;
-    background-color: green;
-    margin: 10px 0;
-}
-
-#make_order_btn {
+.make_order_btn {
     display: inline-block;
     width: 100%;
     padding: 24px 20px;
@@ -91,7 +91,7 @@ header .wrapper {
     border-radius: 12px;
 }
 
-#make_order_btn .wrapper {
+.make_order_btn .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,4 +105,123 @@ main {
 footer {
     width: 100%;
     height: 595px;
+}
+
+#section_2 {
+    height: 715px;
+    padding: 30px 0 20px;
+    background-color: #F3F6F9;
+    border-radius: 30px;
+}
+
+.section_2_text {
+    margin: 0 20px 0;
+}
+
+.section_2_slider_1 {
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.section_2_slider_1 .btn {
+    display: flex;
+    padding: 13px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: auto;
+    border: 1px solid #D9DCE4;
+    border-radius: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    color: #142251;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    word-wrap: break-word 
+}
+.section_2_slider_1 .btn:first-child {
+    margin-left: 20px;
+}
+.section_2_slider_1 .btn:last-child {
+    margin-right: 20px;
+}
+
+.active_btn {
+    border: 1px solid #142251 !important;
+}
+
+.section_2_slider_2 {
+    position: relative;
+    height: 517px;
+    width: 100%;
+    margin-top: 20px;
+    overflow-y: scroll;
+    display: flex;
+}
+
+.section_2_slider_2 .card {
+    position: relative; 
+    height: 517px;
+    width: calc(100% - 40px);
+    max-width: 425px;
+    background-color: #fff;
+    flex-shrink: 0;
+    margin-right: 5px;
+    border-radius: 30px;
+}
+.section_2_slider_2 .card:first-child {
+    margin-left: 20px;
+}
+.section_2_slider_2 .card:last-child {
+    margin-right: 20px;
+}
+
+.section_2_slider_2 .card_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 30px;
+    border-radius: 25px;
+    background-color: #F3F6F9;
+    width: calc(100% - 20px);
+    height: 194px;
+}
+
+.section_2_slider_2 .card .make_order_btn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    width: auto;
+}
+
+.card_title {
+    width: 140px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: #142251;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word;
+}
+
+.card_img_description {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #142251;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    word-wrap: break-word;
+}
+
+#section_3 {
+    padding: 50px 20px;
 }
