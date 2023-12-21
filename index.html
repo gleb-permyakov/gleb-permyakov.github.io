@@ -1,199 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Пермяков 221-324</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
-
-
     <header>
-        <div class="wrapper">
-
-            <button id="logo_btn" type="submit">
+        <div class="header_container">
+            <div class="logo">
                 <img src="./img/logo.svg" alt="">
-            </button>
-
-            <div class="humburger">
-                <img src="./img/hum.svg" alt="">
             </div>
-
+            <nav>
+                <a href="#">Главный</a>
+                <a href="#">О нас</a>
+                <a href="#">Услуги</a>
+                <a href="#">Как мы работаем</a>
+                <a href="#">Клиенты</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="burger">
+                <img src="./img/burger.svg" alt="">
+            </div>
+            <div class="header_btn_order">
+                <p>Оформить заявку</p>
+                <img src="./img/header_plus.svg" alt="">
+            </div>
         </div>
     </header>
-
-
     <main>
-        <section id="section_1">
-
-            <h1>Детективно-информационное <span>агенствооооооо</span></h1>
-            <p>Владеешь информацией - владеешь миром</p>
-
-            <div id="section_1_pic_composition">
-                <img src="./img/bg_section_1.svg" id="bg_section_1" alt="">
-                <img src="./img/pic_section_1.svg" id="pic_section_1" alt="">
-            </div>
-            
-            <a href="" class="make_order_btn">
-                <div class="wrapper">
-                    <div>
-                        Оформить заявку
+        <div class="main_wrapper">
+            <section id="sec1">
+                <div class="left_side">
+                    <h1>
+                        Детективно-информационное <span>агентство</span>
+                    </h1>
+                    <p>Владеешь информацией - владеешь миром</p>
+                    <a class="sec1_btn">
+                        <p>Оформить заявку</p>
+                        <img src="./img/subtract.svg" alt="">
+                    </a>
+                    <div class="arr_down">
+                        <img src="./img/arrow-down.svg" alt="">
                     </div>
-                    <img src="./img/Subtract.svg" alt="">
                 </div>
-            </a>
-
-        </section>
-
-
-        <section id="section_2">
-
-            <div class="section_2_text">
-                <h1>Услуги</h1>
-                <p>Когда другие бессильны - мы делаем</p>
-            </div>
-
-            <div class="section_2_slider_1">
-                <div class="btn active_btn">Работа с информацией</div>
-                <div class="btn">Розыск</div>
-                <div class="btn">Слежка и наблюдение</div>
-                <div class="btn">Бизнес-разведка</div>
-            </div>
-
-            <div class="section_2_slider_2">
-                <div class="card active_card">
-                    <div class="card_img">
-                        <img src="./img/img_in_card1.svg" alt="">
-                    </div>
-
-                    <p class="card_title">Работа с информацией</p>
-
-                    <div class="p_wrapper">
-                        <p class="card_img_description">- Поиск и проверка информации</p>
-                        <p class="card_img_description">- Составление персонального досье</p>
-                        <p class="card_img_description">- Работа с репутацией <br>(защита персональных данных)</p>
-                        <p class="card_img_description">- Информация по номеру телефона</p>
-                    </div>
-
-                    <a href="" class="make_order_btn" style="background-color: #142251; color: #fff">
-                        <div class="wrapper">
-                            <div>
-                                Оформить заявку
-                            </div>
-                            <img src="./img/Subtract.svg" alt="">
-                        </div>
+                <div class="right_side">
+                    <img id="pt1" src="./img/img_part1.svg" alt="">
+                    <img id="pt2" src="./img/img_part2.svg" alt="">
+                    <a id="open_chat" href="">
+                        
                     </a>
                 </div>
-
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-            </div>
-        </section>
-
-
-        <section id="section_3">
-
-            <div class="section_3_text">
-                <h1>Как мы работаем</h1>
-            </div>
-
-            <div class="wrapper">
-                <div class="block">
-                    <div class="pic">
-                        <img src="./img/section2/img1.svg" alt="">
-                    </div>
-                    <p>
-                        Разбираемся в ситуации
-                    </p>
-                    <div class="number">
-                        01
-                    </div>
-                </div>
-
-                <div class="block">
-                    <div class="pic">
-                        <img src="./img/section2/img2.svg" alt="">
-                    </div>
-                    <p>
-                        Составляем план действий
-                    </p>
-                    <div class="number">
-                        02
-                    </div>
-                </div>
-
-                <div class="block">
-                    <div class="pic">
-                        <img src="./img/section2/img3.svg" alt="">  
-                    </div>
-                    <p>
-                        Предоставляем результат
-                    </p>
-                    <div class="number">
-                        03
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="section_4">
-            <div id="bg4_img">
-                <img src="./img/section4/bg_img.svg" alt="">
-            </div>
-
-            <div id="section4_content">
-
-                <div class="section_4_text">
-                    <h1>Наши клиенты</h1>
-                    <p>Строго соблюдаем конфиденциальность и дорожим репутацией каждого клиента</p>
-                </div>
-    
-                <div class="wrapper">
-                    <div class="block">
-                        <p>
-                            Политики
-                        </p>
-                        <img src="" alt="">
-                    </div>
-    
-                    <div class="block">
-                        <p>
-                            Бизнес
-                        </p>
-                        <img src="" alt="">
-                    </div>
-    
-                    <div class="block">
-                        <p>
-                            Селебрити
-                        </p>
-                        <img src="" alt="">
-                    </div>
-    
-                    <div class="block">
-                        <p>
-                            Частные лица
-                        </p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-
-            
-
-        </section>
+            </section>
+        </div>
     </main>
-
-
-    <footer>
-
-    </footer>
 </body>
 </html>
