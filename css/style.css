@@ -2,7 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-shrink: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* цвет зоны отслеживания */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #142251;   
+    border: 2px solid #fff;
+    border-radius: 20px;      
 }
 
 header, main {
@@ -51,6 +70,7 @@ nav a:last-child {
 /* main */
 
 .main_wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,6 +85,7 @@ nav a:last-child {
     height: 868px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 108px;
 }
 
 h1 {
@@ -139,3 +160,184 @@ h1 span {
     z-index: 2;
 }
 
+#open_chat {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    text-transform: lowercase;
+    display: block;
+    text-decoration: none;
+    display: inline-flex;
+    height: 54px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #F2F3F8;
+}
+
+#open_chat p {
+    color: #142251;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+#open_chat span {
+    color: #213887;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+    text-decoration-line: underline
+}
+
+/* sec 2 */
+
+#sec2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F6F9;
+    border-radius: 50px;
+    padding-top: 100px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 80px;
+}
+
+.text_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1150px;
+}
+
+.heading h2 {
+    width: 271px;
+    color: #142251;
+    font-size: 94px;
+    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: -3.76px;
+}
+
+.heading p {
+    max-width: 318px;
+    color: var(--afb-4-c-4, #989EB1);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 120%; 
+    letter-spacing: -0.9px;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 84px;
+    background-color: rgba(228, 231, 241, 1);
+    border-radius: 100px;
+}
+
+.arr_left, .arr_right {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arr_left {
+    border-right: 1px solid rgba(128, 128, 128, 0.432);
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.slider_content {
+    display: flex;
+    overflow-x: scroll;
+    height: 570px;
+    align-items: center;
+    /* justify-content: start; */
+    flex-shrink: 0;
+}
+
+.slider_content::-webkit-scrollbar {
+    height: 10px;
+}
+  
+.slider_content::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* цвет зоны отслеживания */
+}
+
+.slider_content::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.432);   
+    border: 2px solid #fff;
+    border-radius: 20px;      
+}
+  
+  
+
+.card {
+    width: 425px;
+    min-height: 515px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+.card:first-child {
+    margin-left: 30px;
+}
+
+.card:last-child {
+    margin-right: 30px;
+}
+
+.card_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 405px;
+    height: 224px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background-color: #F3F6F9;
+}
+
+h3 {
+    margin: 30px 20px 30px;
+    color: var(--142251, #142251);
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 90%; 
+    letter-spacing: -1.36px;
+}
+
+.card p {
+    max-width: 282px;
+    margin: 0 20px 10px;
+    color: #142251;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.68px;
+}
