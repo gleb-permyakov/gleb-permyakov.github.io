@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/sec2_adaptive.css">
 </head>
 <body>
-    <header>
+    <header id="id_header">
         <div class="header_container">
             <div class="logo">
                 <img src="./img/logo.svg" alt="">
@@ -202,6 +202,42 @@
                 <img id="sec4_bg" src="./img/sec4_graphic.svg" alt="">
             </div>
         </section>
+
+        <section id="sec5">
+            <div class="sec5_content">
+                <h2>Связаться с нами</h2>
+                <form action="#" method="get">
+                    <div class="form_col_1">
+                        <label for="name" id="label_name">Меня зовут <input id="name" type="text" placeholder="Караникола Евгений"> </label>
+                        <label for="mail">Мой email <input id="mail" type="mail" placeholder="example@gmail.com"> </label>
+                    </div>
+                    <div class="form_col_2">
+                        <label for="tel">Мой номер <input id="tel" type="tel" placeholder="+7 (___) ___ - ____"> </label>
+                        <div class="form_send">
+                            <div class="agreement">
+                                <img src="./img/sec5_circle_check.svg" alt="">
+                                <p>Согласие на обработку персональных данных</p>
+                            </div>
+                            <button type="submit" class="btn_send">
+                                <a href="#">Оформить заявку</a>
+                                <img src="./img/subtract.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <a href="#id_header" id="arr_right">
+                    <img src="./img/sec5_arr_right.svg" alt="">
+                </a>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="socials"></div>
+            <a href="" class="policy"></a>
+            <a href="" class="agency"></a>
+            <p>© 2022</p>
+        </div>
+    </footer>
 </body>
 </html>
